@@ -70,7 +70,7 @@ spec:
       serviceAccountName: event-collector
       containers:
       - name: event-collector
-        image: couchbase/event-collector:0.1.0
+        image: couchbase/k8s-event-collector:0.1.0
         resources:
           limits:
             cpu:     100m
