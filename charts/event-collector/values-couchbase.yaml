@@ -6,7 +6,7 @@ serverPort: 8080
 bufferSize: 100
 
 image:
-  repository: couchbase/event-collector
+  repository: couchbase/k8s-event-collector
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""
