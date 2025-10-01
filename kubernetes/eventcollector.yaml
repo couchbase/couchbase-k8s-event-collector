@@ -45,11 +45,9 @@ data:
     eventFilters:
     - apiVersion: couchbase.com/v2
     - labels:
-      - key: app
-        value: couchbase
+      - app: couchbase
     - labels:
-      - key: app
-        value: couchbase-operator
+      - app: couchbase-operator
 ---
 apiVersion: apps/v1
 kind: Deployment
