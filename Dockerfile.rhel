@@ -17,7 +17,7 @@ ARG PROD_BUILD
 ARG OS_BUILD
 
 # Install Couchbase Exporter
-COPY bin/linux/k8s-event-collector-${TARGETARCH} /usr/local/bin/k8s-event-collector
+COPY build/bin/linux/k8s-event-collector-${TARGETARCH} /usr/local/bin/k8s-event-collector
 
 LABEL name="couchbase/k8s-event-collector" \
       vendor="Couchbase" \

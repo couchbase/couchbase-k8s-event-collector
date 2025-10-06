@@ -38,8 +38,8 @@ $(BUILDDIR):
 	mkdir -p $(BUILDDIR)
 
 image-artifacts: bins
-	mkdir -p $(ARTIFACTS)/bin/linux
-	cp build/bin/linux/k8s-event-collector-* $(ARTIFACTS)/bin/linux
+	mkdir -p $(ARTIFACTS)/build/bin/linux
+	cp build/bin/linux/k8s-event-collector-* $(ARTIFACTS)/build/bin/linux
 	cp Dockerfile* License.txt README.md $(ARTIFACTS)
 
 dist: image-artifacts
