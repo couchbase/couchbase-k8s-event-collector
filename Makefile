@@ -1,5 +1,5 @@
 BUILDDIR := build/bin
-ARTIFACTS = build/artifacts/k8s-event-collector
+ARTIFACTS = build/artifacts
 VERSION ?= 0.1.0
 bldNum = $(if $(BLD_NUM),$(BLD_NUM),9999)
 REVISION := $(shell git rev-parse HEAD)
@@ -45,4 +45,4 @@ image-artifacts: bins
 dist: image-artifacts
 	    rm -rf dist
 		mkdir -p dist
-		tar -C $(ARTIFACTS)/.. -czf dist/couchbase-k8s-event-collector-image_$(productVersion).tgz .
+		tar -C $(ARTIFACTS) -czf dist/couchbase-k8s-event-collector-image_$(productVersion).tgz .
